@@ -49,7 +49,7 @@ console.log (`El mensaje "${mensaje1.toLowerCase()}" tiene ${mensaje1.length} le
 // El texto completo en MAYÚSCULAS
 // La cantidad total de caracteres
 let compras ="arroz, fideos, aceite, sal" 
-console.log(`si aparece true es porque esta el aceite "${compras.includes("aceite")}", `)
+console.log(`si aparece true es porque esta el aceite: ${compras.includes("aceite")}, y la cantidad de caracteres ${compras.toUpperCase()} es de ${compras.length} `)
 // 6️⃣ Conversión + análisis
 // Crea las variables:
 // numeroCasa: 456
@@ -59,7 +59,9 @@ console.log(`si aparece true es porque esta el aceite "${compras.includes("aceit
 // Mostrar el número convertido
 // Indicar su tipo de dato
 // Indicar cuántos caracteres tiene
-
+let numero1 = 456
+let numero1_texto = String(numero1);
+console.log(`Mi numero de casa es ${numero1_texto} y el tipo de dato es ${typeof numero1_texto} y tiene ${numero1_texto.length} caracteres`)
 // 7️⃣ Identificación personal extendida
 // Crea las variables:
 // nombre: Diego
@@ -68,7 +70,10 @@ console.log(`si aparece true es porque esta el aceite "${compras.includes("aceit
 // Muestre el nombre completo
 // Indique cuántos caracteres tiene el nombre completo (incluyendo espacio)
 // Muestre todo en MAYÚSCULAS
-
+let nombre2 = "Diego"
+let apellido1 = "Rojas"
+let nombreCompleto1 = nombre1 + apellido1
+console.log(`El nombre es: ${nombre2} y el apellido es: ${apellido1} y el nombre completo tiene: ${nombreCompleto1.length} caracteres`.toUpperCase());
 // 8️⃣ Verificación de contenido
 // Crea la variable:
 // frase: Hoy aprenderemos sobre strings
@@ -76,7 +81,10 @@ console.log(`si aparece true es porque esta el aceite "${compras.includes("aceit
 // Si contiene la palabra "strings"
 // La frase en MAYÚSCULAS
 // La cantidad de caracteres
-
+let frase = "Hoy aprenderemos sobre strings";
+console.log(`la frase ${frase} contiene la palabra "strings":
+    ${frase.includes("strings")}`);
+console.log(`${frase.toUpperCase ()} - Tiene ${frase.length} caracteres`)
 // 9️⃣ Comparación de formatos
 // Crea la variable:
 // texto: Programar es divertido
@@ -85,7 +93,11 @@ console.log(`si aparece true es porque esta el aceite "${compras.includes("aceit
 // El texto en minúsculas
 // El texto en mayúsculas
 // La cantidad de caracteres
-
+let texto1 ="Programar es divertido";
+console.log(`texto original ${texto1}
+    Texto en minusculas: ${texto1.toLowerCase()}
+    Texto en mayusculas: ${texto1.toUpperCase()}
+    El texto tiene: ${texto1.length} caracteres`);
 // 🔟 Desafío completo integrado
 // Crea las variables:
 // curso: 4C
@@ -95,3 +107,8 @@ console.log(`si aparece true es porque esta el aceite "${compras.includes("aceit
 // Convierta el año a texto
 // Indique el tipo de dato del año convertido
 // Muestre todo el mensaje en MAYÚSCULAS
+let curso = "4C"
+let anio = 2026;
+let  aniotexto = String(anio)
+console.log(`Curso ${curso} del año ${anio}
+            \nAño es de tipo: ${typeof aniotexto}`.toUpperCase())
