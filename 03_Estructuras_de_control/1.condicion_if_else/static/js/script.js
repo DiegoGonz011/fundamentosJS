@@ -1,55 +1,63 @@
-console.log("conexion exitosa con js...");
+console.log("Conexion con JS correcta...")
 
-/*
-===============================
-1. que es una condicion en JS?
-===============================
-Una condicion nos permite tomas decisiones en el 
-codigo. separando dos caminos es si (if) y el no (else)
+//declaracion de numeros(creacion variacion numerica)
+let edad = 33;
+let temperatura = -5;
+let precio = 19990;
+let pi = 3.1416;
+let descuento = 0.25;
 
-estrucutura basica: (sintaxis ---> Reglas del lemguaje de programacion)
+//operaciones basicas
+let suma = 10 + 5; //15
+let resta = 10 - 5; //5
+let multiplicacion = 10 * 5; //50
+let division = 10 / 2; //5
+let modulo = 10 % 3; //1
+let potencia = 2 ** 3; //8
 
-if (condicion) {
-    //Codigo que se ejecuta si la condicion e sverdadera.
-} else{
-    // codigo que se ejecuta si la condicion es falsa
-}
-*/
+console.log(`El resultado de 2 elevado a 3 en potencia es: ${2 ** 3}`)
 
-//Ejemplo 1: (numerico) -- if
-let edad = 18;
+//3.- incremento y decremento
+let numero = 10;
+numero++; //11
+numero--;//9
 
-if (edad == 18){ //condicion si
-    console.log ("eres mayor de edad")
-}
+//4.- Numeros con decimales
+let promedio = 6.5;
+let altura = 1.67;
+let peso = 90.3;
 
-//Ejemplo 2: dos caminos posibles
-let temperatura = 10
-if(temperatura >20){
-    console.log ("hace calor")
-} else{
-    console.log ("hace frio")
-}
+//5.- Numeros grandes y noacion cientifica
+let poblacion = 1e6; //1000000
+console.log("Numero grande 1e6: " + poblacion)
+let NumeroPequeño = 5e-3; //0.005
+console.log("Numero pequeño 5e-3: " + NumeroPequeño)
 
+//6.- Operaciones combinadas
+//Calculo precios
+let precioProducto = 10000;
+let iva = 0.19;
+let total = precioProducto + (precioProducto * iva); //11900
+console.log("El precio dinal del producto es: " + total);
+//calculo de valor hora trabajada
+let horas = 40;
+let valorHora = 12000;
+let sueldo = horas * valorHora;
+console.log("El sueldo base es: " + sueldo);
+//7.- Redondeo de numeros
+Math.round(4, 6); //5
+console.log("Redondeando 4.6: " + Math.round(4.6))
+console.log("Redondeando 4.6: " + Math.floor(4.6))
 
-//ejemplo 3: if - else if - else
+//8.-Numeros aleatorios
+let aleatorio = Math.random(); //entre 0 y 1
+let dado = Math.floor(Math.random() * 6) + 1 //entre 1 y 6
+console.log(`tirar dados: ${dado}`);
 
-    let nota = 6.5;
-
-    if (nota >= 6.0){
-        console.log ("Excelente");
-    } else if (nota >=4.0){
-        console.log("aprobado")
-    } else {
-        console.log ("reprobado")
-    }
-
-    //Ejemplo 4: condiciones con string
-    let nombre = "Diego";
-
-    //comparacion exacta (===)
-    if (nombre === "Diego"){
-        console.log ("Hola, " + nombre)
-    } else {
-        console.log ("tu no eres Diego")
-    }
+//9.-Comparaciones numericas
+let a = 10;
+let b = 5;
+console.log(a > b);//true
+console.log(a < b); //false
+console.log(a === 10); //true //(---) estricta igual
+console.log( b === 3); //false
